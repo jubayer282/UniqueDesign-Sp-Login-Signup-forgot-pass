@@ -34,7 +34,8 @@
         android:text="Sign In to continue"
         android:textSize="18sp"
         android:textColor="@color/teal_700"
-        android:fontFamily="@font/sf_ns_text"/>
+        android:fontFamily="@font/sf_ns_text"
+        android:transitionName="logo_desc"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -48,11 +49,13 @@
             android:layout_height="wrap_content"
             android:id="@+id/username"
             android:hint="Username"
+            android:transitionName="username_tran"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:inputType="text"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -63,6 +66,7 @@
             android:hint="Password"
             android:layout_marginTop="20dp"
             app:passwordToggleEnabled="true"
+            android:transitionName="password_tran"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -90,6 +94,7 @@
 
 
         <Button
+            android:id="@+id/login_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/primaryDark"
@@ -97,9 +102,11 @@
             android:textColor="#ffffff"
             android:textSize="20dp"
             android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"/>
+            android:layout_marginBottom="5dp"
+            android:transitionName="button_tran"/>
 
         <Button
+            android:id="@+id/SignUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
@@ -108,7 +115,8 @@
             android:elevation="0dp"
             android:text="New User? Sign Up"
             android:textColor="@color/black"
-            android:textSize="16dp"/>
+            android:textSize="16dp"
+            android:transitionName="login_signup_tran"/>
 
     </LinearLayout>
 
