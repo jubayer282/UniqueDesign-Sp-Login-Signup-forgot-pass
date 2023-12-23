@@ -47,14 +47,14 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/username"
-            android:hint="Username"
+            android:hint="Email"
             android:transitionName="username_tran"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/email"
                 android:inputType="text"/>
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -62,7 +62,6 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/Password"
             android:hint="Password"
             android:layout_marginTop="20dp"
             app:passwordToggleEnabled="true"
@@ -72,8 +71,9 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/password"
                 android:inputType="textPassword"
-                android:maxLength="15"
+                android:maxLength="12"
                 android:textColor="@color/accent"
                 android:maxLines="1"
                 />
@@ -97,13 +97,14 @@
             android:id="@+id/login_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
             android:backgroundTint="@color/primaryDark"
+            android:onClick="registerUser"
             android:text="Go"
             android:textColor="#ffffff"
             android:textSize="20dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:transitionName="button_tran"/>
+            android:transitionName="button_tran" />
 
         <Button
             android:id="@+id/SignUp"
